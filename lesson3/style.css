@@ -100,3 +100,11 @@ form {
 .response-container span {
   font-weight: 400;
 }
+
+hr {
+  width: 100%;
+}
+.block-header {
+  font-weight: 600;
+  padding-left: 20px;
+}
