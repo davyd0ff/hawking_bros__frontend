@@ -1,4 +1,4 @@
-const loadBtn = document.querySelector(".js-load");
+const loadBtn = document.querySelector(".js-load-github");
 const resultsContainer = document.querySelector(".js-results");
 const searchInput = document.querySelector(".js-input");
 
