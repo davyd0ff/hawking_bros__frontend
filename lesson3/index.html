@@ -14,7 +14,8 @@
         <p>Введите свое имя пользователя на GitHub</p>
         <form>
             <input class="input-name js-input" type="text" name="name" placeholder="Введите свое имя GitHub">
-            <button class="load-button js-load"> Загрузить данные </button>
+            <button class="load-button js-load-github"> Загрузить данные (github) </button>
+            <button class="load-button js-load-jsonplaceholder"> Загрузить данные (jsonplaceholder) </button>
         </form>
 
         <div class="results-container js-results">
@@ -23,6 +24,7 @@
     </div>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="scripts.js"></script>
-
+<script src="axios-loader.js"></script>
 </html>
