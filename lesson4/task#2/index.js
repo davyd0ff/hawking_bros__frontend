@@ -3,7 +3,6 @@
 */
 
 function lottery() {
-  console.log("Вы начали игру");
   let promise = new Promise(function (resolve, reject) {
     setTimeout(function () {
       Math.random(0) > 0.5 ? resolve() : reject("Вы промахнулись");
@@ -13,6 +12,7 @@ function lottery() {
 }
 
 const game = async () => {
+  console.log("Вы начали игру");
   try {
     await lottery();
     console.log("Вы выиграли");
