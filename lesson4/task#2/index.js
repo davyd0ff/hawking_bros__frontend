@@ -1,5 +1,5 @@
 /*
-  Переписатьпримерлотереинаasync/await.
+  Переписать пример лотереи на async/await.
 */
 
 function lottery() {
@@ -12,8 +12,16 @@ function lottery() {
   return promise;
 }
 
-lottery()
-  .then(() => console.log("Вы выиграли"))
-  .then(() => console.log("Вам заплатили"))
-  .catch(() => console.log("Вы проиграли"))
-  .finally(() => console.log("Игра закончена"));
+const game = async () => {
+  try {
+    await lottery();
+    console.log("Вы выиграли");
+    console.log("Вам заплатили");
+  } catch (err) {
+    console.log("Вы проиграли");
+  } finally {
+    console.log("Игра закончена");
+  }
+};
+
+game();
